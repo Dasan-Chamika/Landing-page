@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap");
+
+.slider {
+  display: flex;
+  align-items: center;
+  margin: 30px 20px;
+  opacity: 0;
+  transform: scale(85%);
+  transition: 2s;
+  border-radius: 10px;
+}
+
+.slider--zoom {
+  opacity: 1;
+  transform: scale(100%);
+  transition: 2s;
+}
+
+.slider_Image {
+  width: 60%;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.slider_Image:hover {
+  transform: scale(1.005);
+}
+
+.slider_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider_title {
+  text-align: center;
+  font-family: Bree Serif;
+  font-size: 5rem;
+  letter-spacing: 1rem;
+}
+
+.slider_subtitle {
+  font-family: Hind Madurai;
+  font-size: 2rem;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 1710px) {
+  .slider_title {
+    font-size: 4rem;
+  }
+
+  .slider_subtitle {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .slider_title {
+    font-size: 3rem;
+  }
+
+  .slider_subtitle {
+    font-size: 1rem;
+  }
+
+  .slider {
+    flex-direction: column;
+    background-color: rgb(215, 218, 221);
+  }
+
+  .slider_Image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slider_title {
+    font-size: 2rem;
+  }
+
+  .slider_subtitle {
+    font-size: 1rem;
+  }
+}

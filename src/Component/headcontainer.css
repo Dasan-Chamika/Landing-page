@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+.main_Head {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.head_Image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.head_Title {
+  position: absolute;
+  bottom: 25%;
+  left: 5%;
+  color: #fff;
+  font-size: 5rem;
+  padding: 15px;
+  font-family: Righteous;
+  font-weight: normal;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .head_Title {
+    font-size: 4rem;
+    bottom: 35%;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .head_Title {
+    bottom: 45%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .head_Title {
+    font-size: 3rem;
+    bottom: 55%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .head_Title {
+    font-size: 2.5rem;
+    bottom: 65%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .head_Title {
+    font-size: 1.5rem;
+    bottom: 75%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .head_Title {
+    font-size: 1.5rem;
+    bottom: 80%;
+    left: 4%;
+  }
+}
