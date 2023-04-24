@@ -53,6 +53,16 @@
   font-size: 23px;
 }
 
+@media screen and (max-width: 1000px) {
+  .navbar {
+    height: 60px;
+  }
+
+  .navbar_logo {
+    font-size: 2.2rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .navbar_list {
     display: flex;
@@ -105,6 +115,10 @@
   .navbar_logo {
     font-size: 2rem;
   }
+
+  .navbar {
+    height: 55px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -116,5 +130,8 @@
 @media screen and (max-width: 350px) {
   .navbar_logo {
     font-size: 1.5rem;
+  }
+  .navbar {
+    height: 50px;
   }
 }
